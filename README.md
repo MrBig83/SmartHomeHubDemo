@@ -19,3 +19,6 @@ SmartHomeFacade ger ett förenklat API som används av Program.cs istället för
 
 Singleton
 Logger implementeras som en Singleton så att alla delar av systemet använder samma instans.
+
+UML-Diagram:
+![UML-Diagram över SmartHomeHubDemo](/Extras/UML.png)
