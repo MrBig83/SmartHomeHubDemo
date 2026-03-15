@@ -22,3 +22,6 @@ Logger implementeras som en Singleton så att alla delar av systemet använder s
 
 UML-Diagram:
 ![UML-Diagram över SmartHomeHubDemo](/Extras/UML.png)
+
+Schreenshot:
+![Screenshot över SmartHomeHubDemo](/Extras/ScreenShot.png)
