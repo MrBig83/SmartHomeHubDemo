@@ -1,21 +1,21 @@
 # SmartHomeHub – Design Patterns Demo
 
-## How to run
+## Köra programmet:
 dotnet run
 
-## Patterns used
+## Patterns som används:
 
-Observer  
-Devices notify Dashboard, Logger and Audit observers when their state changes.
+Observer
+När en device ändrar state notifieras flera observers automatiskt (Dashboard, Logger och Audit). Detta implementerar en one-to-many relation där observers registrerar sig hos devices.
 
-Command  
-All actions are encapsulated as command objects like TurnOnCommand and LockDoorCommand.
+Command
+Alla actions kapslas som kommandon (TurnOnCommand, LockDoorCommand osv). Detta gör att systemet kan köa och replaya kommandon.
 
-Strategy  
-Different system modes (NormalMode, EcoMode, PartyMode) control system behaviour.
+Strategy
+Systemets beteende styrs av ett valbart mode (Normal, Eco, Party). Algoritmen för hur hubben beter sig byts dynamiskt via Strategy.
 
-Facade  
-SmartHomeFacade exposes a simple API so Program.cs does not interact with subsystems.
+Facade
+SmartHomeFacade ger ett förenklat API som används av Program.cs istället för att interagera direkt med alla subsystems.
 
-Singleton  
-Logger is implemented as a Singleton so the same instance is used everywhere.
+Singleton
+Logger implementeras som en Singleton så att alla delar av systemet använder samma instans.
